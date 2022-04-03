@@ -96,6 +96,7 @@ if($text=="Qabul tartibi"){
 		'text'=> "Litseyga qabul har yili fevral oyining oxirida boshlanadi.\nLitseyga 9-sinf bitiruvchi o'quvchilar(o'g'il bolalar) tibbiy ko'rik, jismoniy tayyorgarlik va davlat test markazi tomonidan o'tkaziladigan tanlovlar orqali qabul qilinadi.",
 		'reply_markup'=>$key1,
 		'parse_mode'=>'html'
+]);
 }
 if($text=="Savol berish"){
 	bot('sendMessage',[
@@ -132,7 +133,7 @@ if($cid == $admin or $cid=="854021271" and $text=="/admin"){
 		'text'=>$text,
 		'reply_message'=>true,
 		'message_id'=>$mid,
-	])
+	]);
 }
 if($text=="Litsey ma'muriyati"){
 	bot('sendMessage',[
